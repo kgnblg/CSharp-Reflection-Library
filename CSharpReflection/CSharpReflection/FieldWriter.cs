@@ -22,6 +22,7 @@ namespace CSharpReflection
                 fieldelement.fieldName = field.Name;
                 fieldelement.fieldTypeFullName = field.FieldType.FullName;
                 fieldelement.fieldReturnType = field.FieldType.Name;
+                fieldelement.FieldType = field.FieldType;
 
                 fieldlist.Add(fieldelement);
             }

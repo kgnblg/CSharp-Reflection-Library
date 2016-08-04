@@ -22,6 +22,7 @@ namespace CSharpReflection
                 propertyelement.propertyName = property.Name;
                 propertyelement.propertyTypeFullName = property.PropertyType.FullName;
                 propertyelement.propertyReturnType = property.PropertyType.Name;
+                propertyelement.propertyType = property.PropertyType;
 
                 propertyelements.Add(propertyelement);
             }
