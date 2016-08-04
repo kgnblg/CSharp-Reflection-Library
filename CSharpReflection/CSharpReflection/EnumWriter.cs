@@ -1,24 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSharpReflection
 {
     class EnumWriter
     {
-        private Type type;
-        private Elements elements;
+        Type type;
+        Elements elements;
 
         public EnumWriter(Type type, Elements elements)
         {
-            // TODO: Complete member initialization
             this.type = type;
             this.elements = elements;
         }
+
         public void Write()
         {
-            throw new NotImplementedException();
+            EnumElements enumelements = new EnumElements();
+            enumelements.enumName = type.Name;
+            enumelements.enumNamespace = type.Namespace;
+            enumelements.enumValues = type.GetEnumValues();
         }
     }
 }

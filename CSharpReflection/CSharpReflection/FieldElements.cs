@@ -1,10 +1,9 @@
-﻿using System;
-
-namespace CSharpReflection
+﻿namespace CSharpReflection
 {
     class FieldElements
     {
-        string fieldName;
-        Type fieldType;
+        public string fieldName;
+        public string fieldTypeFullName;
+        public string fieldReturnType;
     }
 }

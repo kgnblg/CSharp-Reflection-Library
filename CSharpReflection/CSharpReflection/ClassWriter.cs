@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpReflection
 {
@@ -15,7 +16,17 @@ namespace CSharpReflection
 
         public void Write()
         {
-            
+            elements.classList = new List<ClassElements>();
+            ClassElements classelement = new ClassElements();
+
+            classelement.className = type.Name;
+            classelement.classNamespace = type.Namespace;
+
+            FieldWriter fieldwriter = new FieldWriter(type.GetFields());
+            classelement.classFields = fieldwriter.Writer();
+
+            PropertyWriter propertywriter = new PropertyWriter(type.GetProperties());
+            classelement.classPropertys = propertywriter.Writer();
         }
     }
 }

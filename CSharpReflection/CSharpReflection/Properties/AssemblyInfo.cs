@@ -2,35 +2,35 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("CSharpReflection")]
+// Bir bütünleştirilmiş koda ilişkin Genel Bilgiler aşağıdaki öznitelikler kümesiyle
+// denetlenir. Bütünleştirilmiş kod ile ilişkili bilgileri değiştirmek için
+// bu öznitelik değerlerini değiştirin.
+[assembly: AssemblyTitle("RefTeamWork")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CSharpReflection")]
+[assembly: AssemblyProduct("RefTeamWork")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
+// ComVisible ayarının false olarak belirlenmesi bu derlemedeki türleri 
+// COM bileşenlerine görünmez yapar.  Bu derlemedeki bir türe COM'dan 
+// erişmeniz gerekirse ComVisible özniteliğini o türde true olarak ayarlayın.
 [assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5bbe2713-fde2-41f9-8c4b-df72e3a7349b")]
+// Bu proje COM'un kullanımına sunulursa, aşağıdaki GUID tür kitaplığının kimliği içindir
+[assembly: Guid("e09f23d4-ef37-4c0f-b810-36602b3c0e29")]
 
-// Version information for an assembly consists of the following four values:
+// Bir derlemenin sürüm bilgileri aşağıdaki dört değerden oluşur:
 //
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
+//      Ana Sürüm
+//      İkincil Sürüm 
+//      Yapı Numarası
+//      Düzeltme
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
+// Değerlerin tümünü belirtebilir ya da Yapı ve Düzeltme Numaralarını aşağıda gösterildiği gibi 
+// '*' kullanarak varsayılana ayarlayabilirsiniz:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

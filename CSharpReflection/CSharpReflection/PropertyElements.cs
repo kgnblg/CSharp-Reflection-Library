@@ -4,7 +4,8 @@ namespace CSharpReflection
 {
     class PropertyElements
     {
-        string propertyName;
-        Type propertyType;
+        public string propertyName;
+        public string propertyTypeFullName;
+        public string propertyReturnType;
     }
 }

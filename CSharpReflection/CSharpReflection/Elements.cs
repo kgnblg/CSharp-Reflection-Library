@@ -1,9 +1,11 @@
-﻿namespace CSharpReflection
+﻿using System.Collections.Generic;
+
+namespace CSharpReflection
 {
     class Elements
     {
-        ClassElements[] classList;
-        EnumElements[] enumList;
-        StructElements[] structList;
+        public List<ClassElements> classList;
+        public List<EnumElements> enumList;
+        public List<StructElements> structList;
     }
 }

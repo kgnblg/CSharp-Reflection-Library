@@ -1,10 +1,12 @@
-﻿namespace CSharpReflection
+﻿using System.Collections.Generic;
+
+namespace CSharpReflection
 {
     class ClassElements
     {
-        private string classNamespace;
-        string className;
-        FieldElements[] classFields;
-        PropertyElements[] classPropertys;
+        public string classNamespace;
+        public string className;
+        public List<FieldElements> classFields;
+        public List<PropertyElements> classPropertys;
     }
 }

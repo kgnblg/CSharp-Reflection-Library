@@ -4,8 +4,8 @@ namespace CSharpReflection
 {
     class EnumElements
     {
-        string enumNamespace;
-        string enumName;
-        Array[] enumValues;
+        public string enumName;
+        public string enumNamespace;
+        public Array enumValues;
     }
 }

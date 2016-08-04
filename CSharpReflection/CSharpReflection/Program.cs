@@ -11,7 +11,8 @@ namespace CSharpReflection
         static void Main(string[] args)
         {
             AssemblyReader assemblyReader = new AssemblyReader("C:/Users/gnygl/Downloads/ReflectionOrnekClass.dll");
-            assemblyReader.GetAssembly();
+            TypeHandler typehandler = new TypeHandler(assemblyReader.GetAssembly());
+            typehandler.TypeSender();
         }
     }
 }

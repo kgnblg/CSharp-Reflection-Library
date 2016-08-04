@@ -1,20 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSharpReflection
 {
     class StructWriter
     {
-        public StructWriter(Type type, Elements elements)
+        Type type;
+        Elements element;
+
+        public StructWriter(Type type, Elements element)
         {
-            throw new NotImplementedException();
+            this.type = type;
+            this.element = element;
         }
 
         public void Write()
         {
-            throw new NotImplementedException();
+            StructElements structelement = new StructElements();
+            structelement.structName = type.Name;
+            structelement.structNamespace = type.Namespace;
+
+            FieldWriter structfields = new FieldWriter(type.GetFields());
+            structelement.structFields = structfields.Writer();
         }
     }
 }

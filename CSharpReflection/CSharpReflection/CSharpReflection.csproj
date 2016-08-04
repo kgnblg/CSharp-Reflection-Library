@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{34BA03AA-75F1-49ED-BFB0-8C4546548D9C}</ProjectGuid>
+    <ProjectGuid>{E09F23D4-EF37-4C0F-B810-36602B3C0E29}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpReflection</RootNamespace>
-    <AssemblyName>CSharpReflection</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>RefTeamWork</RootNamespace>
+    <AssemblyName>RefTeamWork</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,11 +39,25 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyReader.cs" />
+    <Compile Include="ClassElements.cs" />
+    <Compile Include="ClassWriter.cs" />
+    <Compile Include="Elements.cs" />
+    <Compile Include="EnumElements.cs" />
+    <Compile Include="EnumWriter.cs" />
+    <Compile Include="FieldElements.cs" />
+    <Compile Include="FieldWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyElements.cs" />
+    <Compile Include="PropertyWriter.cs" />
+    <Compile Include="StructElements.cs" />
+    <Compile Include="StructWriter.cs" />
+    <Compile Include="TypeHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

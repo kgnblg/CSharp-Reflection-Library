@@ -1,9 +1,11 @@
-﻿namespace CSharpReflection
+﻿using System.Collections.Generic;
+
+namespace CSharpReflection
 {
     class StructElements
     {
-        string structName;
-        string structNamespace;
-        FieldElements[] structFields;
+        public string structName;
+        public string structNamespace;
+        public List<FieldElements> structFields;
     }
 }
