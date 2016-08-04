@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace CSharpReflection
 {
@@ -6,6 +6,6 @@ namespace CSharpReflection
     {
         public string enumName;
         public string enumNamespace;
-        public Array enumValues;
+        public List<EnumFields> enumFields;
     }
 }

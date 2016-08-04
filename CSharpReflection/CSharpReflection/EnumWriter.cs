@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpReflection
 {
@@ -18,7 +19,17 @@ namespace CSharpReflection
             EnumElements enumelements = new EnumElements();
             enumelements.enumName = type.Name;
             enumelements.enumNamespace = type.Namespace;
-            enumelements.enumValues = type.GetEnumValues();
+
+            List<EnumFields> enumfields = new List<EnumFields>();
+
+            foreach (var value in type.GetEnumValues())
+            {
+                EnumFields enumfield = new EnumFields();
+                enumfield.enumValue = value.ToString();
+                enumfield.enumNumberValue = (int)value;
+
+                enumfields.Add(enumfield);
+            }
         }
     }
 }

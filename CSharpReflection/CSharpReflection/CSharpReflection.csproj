@@ -48,6 +48,7 @@
     <Compile Include="ClassWriter.cs" />
     <Compile Include="Elements.cs" />
     <Compile Include="EnumElements.cs" />
+    <Compile Include="EnumFields.cs" />
     <Compile Include="EnumWriter.cs" />
     <Compile Include="FieldElements.cs" />
     <Compile Include="FieldWriter.cs" />
