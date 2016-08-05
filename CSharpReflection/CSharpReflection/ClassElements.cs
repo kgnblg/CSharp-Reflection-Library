@@ -2,11 +2,11 @@
 
 namespace CSharpReflection
 {
-    class ClassElements
+    public class ClassElements
     {
         public string classNamespace;
         public string className;
-        public List<FieldElements> classFields;
-        public List<PropertyElements> classPropertys;
+        public List<FieldElements> classFields = new List<FieldElements>();
+        public List<PropertyElements> classPropertys = new List<PropertyElements>();
     }
 }

@@ -5,7 +5,7 @@ namespace CSharpReflection
     class StructWriter
     {
         Type type;
-        Elements element;
+        public Elements element;
 
         public StructWriter(Type type, Elements element)
         {
@@ -21,6 +21,8 @@ namespace CSharpReflection
 
             FieldWriter structfields = new FieldWriter(type.GetFields());
             structelement.structFields = structfields.Writer();
+
+            element.structList.Add(structelement);
         }
     }
 }

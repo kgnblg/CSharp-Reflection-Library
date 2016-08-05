@@ -6,7 +6,7 @@ namespace CSharpReflection
     class EnumWriter
     {
         Type type;
-        Elements elements;
+        public Elements elements;
 
         public EnumWriter(Type type, Elements elements)
         {
@@ -30,6 +30,9 @@ namespace CSharpReflection
 
                 enumfields.Add(enumfield);
             }
+
+            enumelements.enumFields = enumfields;
+            elements.enumList.Add(enumelements);
         }
     }
 }

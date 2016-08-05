@@ -2,7 +2,7 @@
 
 namespace CSharpReflection
 {
-    class EnumElements
+    public class EnumElements
     {
         public string enumName;
         public string enumNamespace;

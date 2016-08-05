@@ -6,7 +6,7 @@ namespace CSharpReflection
     class ClassWriter
     {
         Type type;
-        Elements elements;
+        public Elements elements;
 
         public ClassWriter(Type type, Elements elements)
         {
@@ -16,7 +16,6 @@ namespace CSharpReflection
 
         public void Write()
         {
-            elements.classList = new List<ClassElements>();
             ClassElements classelement = new ClassElements();
 
             classelement.className = type.Name;
@@ -27,6 +26,8 @@ namespace CSharpReflection
 
             PropertyWriter propertywriter = new PropertyWriter(type.GetProperties());
             classelement.classPropertys = propertywriter.Writer();
+
+            elements.classList.Add(classelement);
         }
     }
 }

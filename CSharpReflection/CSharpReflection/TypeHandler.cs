@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace CSharpReflection
 {
-    class TypeHandler
+    public class TypeHandler
     {
         Type[] types;
         Elements elements = new Elements();
@@ -13,7 +13,7 @@ namespace CSharpReflection
             types = assembly.GetTypes();
         }
 
-        public void TypeSender()
+        public Elements TypeSender()
         {
             foreach (var type in types)
             {
@@ -21,18 +21,23 @@ namespace CSharpReflection
                 {
                     ClassWriter classwriter = new ClassWriter(type, elements);
                     classwriter.Write();
+                    elements = classwriter.elements;
                 }
                 else if (type.IsEnum)
                 {
                     EnumWriter enumwriter = new EnumWriter(type, elements);
                     enumwriter.Write();
+                    elements = enumwriter.elements;
                 }
                 else
                 {
                     StructWriter structwriter = new StructWriter(type, elements);
                     structwriter.Write();
+                    elements = structwriter.element;
                 }
             }
+
+            return elements;
         }
     }
 }
