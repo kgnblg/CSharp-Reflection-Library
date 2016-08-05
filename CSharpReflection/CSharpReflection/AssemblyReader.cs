@@ -2,7 +2,7 @@
 
 namespace CSharpReflection
 {
-    class AssemblyReader
+    public class AssemblyReader
     {
         private Assembly Assembly;
 

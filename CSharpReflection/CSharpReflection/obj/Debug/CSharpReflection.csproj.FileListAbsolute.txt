@@ -1,1 +1,7 @@
 C:\Users\gnygl\Desktop\projects\ReflectionTeamWork\CSharpReflection\CSharpReflection\bin\Debug\CSharpReflection.exe.config
+C:\Users\gnygl\Desktop\projects\ortak\ReflectionTeamWork\CSharpReflection\CSharpReflection\obj\Debug\CSharpReflection.csprojResolveAssemblyReference.cache
+C:\Users\gnygl\Desktop\projects\ortak\ReflectionTeamWork\CSharpReflection\CSharpReflection\bin\Debug\RefTeamWork.dll.config
+C:\Users\gnygl\Desktop\projects\ortak\ReflectionTeamWork\CSharpReflection\CSharpReflection\bin\Debug\RefTeamWork.dll
+C:\Users\gnygl\Desktop\projects\ortak\ReflectionTeamWork\CSharpReflection\CSharpReflection\bin\Debug\RefTeamWork.pdb
+C:\Users\gnygl\Desktop\projects\ortak\ReflectionTeamWork\CSharpReflection\CSharpReflection\obj\Debug\RefTeamWork.dll
+C:\Users\gnygl\Desktop\projects\ortak\ReflectionTeamWork\CSharpReflection\CSharpReflection\obj\Debug\RefTeamWork.pdb
